@@ -255,7 +255,6 @@ class TrackMarker(QtWidgets.QListWidgetItem):
         # create a pen for the ellipse using the base marker colour
         ellipsePen = QtGui.QPen(constants.DEFAULTMARKERCOLOR)
         # set the width of the pen to width
-        print(f"{width=}")
         ellipsePen.setWidthF(width)
         # set the newly created pen as the ellipse's pen
         self.ellipse.setPen(ellipsePen)

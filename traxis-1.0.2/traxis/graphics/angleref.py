@@ -186,7 +186,7 @@ class ReferenceLine(object):
             # point
             newInitialPen = self.initialPoint.pen()
             # set the width of the new pen
-            newInitialPen.setWidth(width)
+            newInitialPen.setWidthF(width)
             # set the resized pen as the initial point's pen
             self.initialPoint.setPen(newInitialPen)
 
@@ -208,7 +208,7 @@ class ReferenceLine(object):
             # point
             newFinalPen = self.finalPoint.pen()
             # set the width of the new pen
-            newFinalPen.setWidth(width)
+            newFinalPen.setWidthF(width)
             # set the resized pen as the final point's pen
             self.finalPoint.setPen(newFinalPen)
 
@@ -217,7 +217,7 @@ class ReferenceLine(object):
             # create a new pen, starting from the existing pen of the line
             newLinePen = self.line.pen()
             # set the width of the new pen
-            newLinePen.setWidth(width)
+            newLinePen.setWidthF(width)
             # set the resized pen as the line's pen
             self.line.setPen(newLinePen)
 
